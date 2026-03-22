@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.personal-interests {
+  width: var(--cWidth);
+  max-width: 1920px;
+  margin: 150px auto;
+  /* More margin for staggering */
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  padding: 100px 20px 150px;
+}
+
+.section-title {
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(0deg, #0d9488, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 150px;
+}
+
+.interests-grid-wrapper {
+  width: 100%;
+}
+
+.interests-grid-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  /* Very tight gaps as requested */
+  width: 100%;
+}
+
+.interest-item.elevated {
+  transform: translateY(-80px);
+  /* Significant elevation for effect */
+}
+
+.interest-item {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 16px;
+  background-color: #1a1f2e;
+}
+
+/* 3x3 Layout - portrait will naturally flow into the middle if provided index 4 */
+/* Since I have 7 items, it will fill 2.33 rows */
+
+/* Card Interaction Styling */
+.interest-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.card-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  /* Force Grayscale by default */
+  transition: filter 0.6s ease, transform 0.6s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.3) 100%);
+  opacity: 1;
+  pointer-events: none;
+}
+
+/* Hover Effect: REVEAL COLOR & REMOVE GRAYSCALE */
+.interest-card:hover .card-bg {
+  filter: grayscale(0%) saturate(1.2);
+  /* Remove grayscale and boost color */
+  transform: scale(1.1);
+}
+
+
+
+/* Card Content (Description revealed on hover) */
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.4s ease;
+  box-sizing: border-box;
+}
+
+
+.interest-card:hover .card-content {
+  opacity: 1;
+}
+
+.card-content p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 80%;
+}
+
+/* Pill Label (as seen in screenshot) */
+.card-label {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 18px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+}
+
+
+.interest-card:hover .card-label {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.card-label svg {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+
+/* For mobile/tablet, stack them */
+@media screen and (max-width: 1024px) {
+  .interests-grid-main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .interest-item.elevated {
+    transform: none;
+    /* Disable staggered on tablet/mobile */
+  }
+
+  .section-title {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .interests-grid-main {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .section-title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
