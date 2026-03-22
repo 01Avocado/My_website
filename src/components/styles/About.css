@@ -21,7 +21,7 @@
 }
 
 .about-me h3 {
-  font-size: 25px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 7px;
   font-weight: 400;
@@ -29,9 +29,9 @@
 }
 
 .about-me p {
-  font-size: 33px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 32px;
   letter-spacing: 0px;
   text-align: justify;
 }
@@ -39,6 +39,13 @@
 @media only screen and (min-width: 600px) {
   .about-section {
     justify-content: center;
+  }
+  .about-me h3 {
+    font-size: 25px;
+  }
+  .about-me p {
+    font-size: 33px;
+    line-height: 36px;
   }
 }
 
