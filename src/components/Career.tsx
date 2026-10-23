@@ -21,35 +21,43 @@ const Career = () => {
               <h3>2022</h3>
             </div>
             <p>
-              Pursuing a Bachelor of Engineering in Electronics and Telecommunication with CGPA of 7.67.
+              Bachelor of Technology in Electronics and Telecommunication (GPA 7.66). Focused on deep learning research, signal processing, and systems engineering.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Honors in Deep Learnig</h4>
+                <h4>Honors in Deep Learning</h4>
                 <h5>Pimpri Chinchwad College Of Engineering, Pune</h5>
               </div>
               <h3>2024</h3>
             </div>
             <p>
-              Pursuing Honors in Deep Learning.
-              Maintaining a strong academic record (8.67 Honors CGPA) while
-              developing innovative AI projects.
+              Honors in Deep Learning with 9.0 GPA. Focused on multimodal transformers, model evaluation, and computer vision research.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>AI Intern</h4>
+                <h4>AI Product Development Intern</h4>
                 <h5>Asymmetrical Learning</h5>
               </div>
               <h3>2025</h3>
             </div>
             <p>
-              Engineered core AI microservices using OpenAI, Gemini, Claude, and
-              Deepgram. Co-developed the Wriddles App (Flutter/Firebase) and
-              built scalable NLP/TTS pipelines.
+              Engineered and deployed 8+ Python AI microservices integrating OpenAI, Gemini, Claude, Deepgram, and ElevenLabs. Co-developed Wriddles app with LLM-driven workflows and adaptive explore–exploit recommendations.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Associate AI Software Engineer</h4>
+                <h5>Sciverse Solutions</h5>
+              </div>
+              <h3>2026</h3>
+            </div>
+            <p>
+              Leading AI architecture for a SaaS assistant with layered tool & RAG orchestration, multi-round tool execution, RBAC, cost budgeting, and lightweight in-house guardrails using Ollama models.
             </p>
           </div>
         </div>

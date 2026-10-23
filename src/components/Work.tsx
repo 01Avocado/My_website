@@ -5,22 +5,36 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Wriddles App",
-    category: "Mobile Application",
-    tools: "Flutter, Firebase, GCP, Python, OpenAI",
-    image: "/images/Wriddles.jpeg", // Placeholder
+    title: "Wriddles: AI-Powered Learning Platform",
+    category: "AI & Mobile Application",
+    tools: "Flutter, Firebase, GCP, Python, Gemini API",
+    description:
+      "Co-developed and deployed an AI-powered personalized learning platform on Google Play and Apple App Store, featuring explore–exploit recommendation algorithms, automated content classification, and LLM-driven workflows.",
+    image: "/images/Wriddles.jpeg",
   },
   {
-    title: "Smart Water Analyzer",
-    category: "IoT & Machine Learning",
-    tools: "ESP32, Python, Random Forest, LSTM",
-    image: "/images/Water_Quality.jpeg", // Placeholder
+    title: "Employee Onboarding & Competency Platform",
+    category: "Full-Stack Web Application",
+    tools: "React, TypeScript, FastAPI, PostgreSQL, SQLAlchemy, Google OAuth, JWT, TailwindCSS",
+    description:
+      "Engineered 20+ REST APIs, a PostgreSQL schema with 15+ relational tables, Google OAuth/JWT authentication, role-based workflows, and document-based quiz import.",
+    image: "/images/employee_onboarding.jpg",
   },
   {
-    title: "La Siesta Cafe Website",
-    category: "Website",
-    tools: "CSS, JavaScript,Typescript",
-    image: "/images/lasiesta.png", // Placeholder
+    title: "Multimodal Transformer: Chromatin Accessibility",
+    category: "Deep Learning Research (BMC Informatics)",
+    tools: "PyTorch, Multimodal Transformers, Genomic Data, ROC-AUC (0.890), Ablation Studies",
+    description:
+      "Modality-aware multimodal transformer integrating DNA sequence, histone-modification, and transcription-factor signals. Achieved 0.802 Pearson correlation and 0.890 ROC-AUC with systematic ablation studies.",
+    image: "/images/chromatin_transformer.jpg",
+  },
+  {
+    title: "Smart Water Quality & Disease Outbreak Forecasting",
+    category: "IoT & Predictive ML (IEEE PuneCon 2025)",
+    tools: "Python, ESP32, Random Forest, LSTM, Scikit-learn",
+    description:
+      "Published in IEEE Xplore. Smart IoT-based water quality monitoring and outbreak forecasting with real-time sensor integration and predictive machine learning models.",
+    image: "/images/Water_Quality.jpeg",
   },
 ];
 
@@ -95,6 +109,9 @@ const Work = () => {
                         <h4>{project.title}</h4>
                         <p className="carousel-category">
                           {project.category}
+                        </p>
+                        <p className="carousel-description">
+                          {project.description}
                         </p>
                         <div className="carousel-tools">
                           <span className="tools-label">Tools & Features</span>

@@ -6,12 +6,12 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          AI/ML developer with expertise in microservices automation, multimodal
-          transformer architectures, and production ready application development.
-          I build scalable AI systems, optimize inference pipelines, and deliver
-          end-to-end engineering impact across cloud, mobile, and web platforms.
-          I bring a strong product mindset evaluating features from both technical
-          and business perspectives to drive user value and product growth.
+          Applied AI engineer with experience across deep learning research,
+          computer vision/OCR proof-of-concepts, multi-modal transformers, and
+          production AI systems. Combines model evaluation and experimentation
+          with the ability to design and build deployable AI backends. Focused on
+          understanding model behaviour, improving task performance, and
+          applying ML/DL to real-world problems.
         </p>
       </div>
     </div>

@@ -88,22 +88,21 @@ const WhatIDo = () => {
 
             <div className="what-content-in">
               <h3>AI / ML Engineer</h3>
-              <h4>Developing Intelligent Systems</h4>
+              <h4>Research & Production AI Systems</h4>
               <p>
-                Specializing in Deep Learning, NLP, and Multimodal Transformers.
-                Optimizing inference pipelines and integrating LLMs for
-                production-ready applications.
+                Specializing in Deep Learning, Multimodal Transformers, and Computer Vision.
+                Designing RAG pipelines, custom tool orchestration, and rigorous model evaluation.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">PyTorch</div>
                 <div className="what-tags">TensorFlow</div>
-                <div className="what-tags">NLP</div>
-                <div className="what-tags">LLM Integration</div>
-                <div className="what-tags">Fine-Tuning</div>
-                <div className="what-tags">Deep Learning</div>
-                <div className="what-tags">Prompt Engineering</div>
-                <div className="what-tags">Model Deployment</div>
+                <div className="what-tags">Transformers</div>
+                <div className="what-tags">RAG & Embeddings</div>
+                <div className="what-tags">Vector DBs</div>
+                <div className="what-tags">Computer Vision / YOLO</div>
+                <div className="what-tags">Ollama & Bedrock</div>
+                <div className="what-tags">Model Evaluation</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -116,9 +115,9 @@ const WhatIDo = () => {
               <svg height="100%">
                 <line
                   x1="0"
-                  y1="100%"
+                  y1="120%"
                   x2="100%"
-                  y2="100%"
+                  y2="120%"
                   stroke="white"
                   strokeWidth="2"
                   strokeDasharray="6,6"
@@ -127,22 +126,22 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>Software Developer</h3>
-              <h4>Robust & Scalable Infrastructure</h4>
+              <h3>Backend & MLOps</h3>
+              <h4>Robust & Deployable AI Infrastructure</h4>
               <p>
-                Building cross-platform apps and microservices. Expertise in
-                cloud-native automation and serverless logic with GCP and Firebase.
+                Building production AI backends and microservices with multi-round tool execution,
+                strict RBAC schemas, and observability using MLflow and Langfuse.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">Python</div>
-                <div className="what-tags">Flutter</div>
-                <div className="what-tags">Firebase</div>
-                <div className="what-tags">GCP</div>
-                <div className="what-tags">SQL</div>
-                <div className="what-tags">Microservices</div>
-                <div className="what-tags">Cloud Functions</div>
-                <div className="what-tags">C++</div>
+                <div className="what-tags">FastAPI</div>
+                <div className="what-tags">PostgreSQL</div>
+                <div className="what-tags">SQLAlchemy</div>
+                <div className="what-tags">REST APIs</div>
+                <div className="what-tags">JWT / OAuth2 / RBAC</div>
+                <div className="what-tags">MLflow & Langfuse</div>
+                <div className="what-tags">GCP / Cloud Functions</div>
               </div>
               <div className="what-arrow"></div>
             </div>
